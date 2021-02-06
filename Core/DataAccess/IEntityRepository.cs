@@ -1,10 +1,10 @@
-﻿using Entites.Abstract;
+﻿using Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace DataAccess.Abstract
+namespace Core.DataAccess
 {
     //Generic constraint //class: reference type //IEntity is not an object //new(): must be newable
     public interface IEntityRepository<T> where T:class,IEntity,new() 
